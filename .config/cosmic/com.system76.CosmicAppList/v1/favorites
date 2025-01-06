@@ -2,9 +2,5 @@
     "firefox",
     "com.system76.CosmicFiles",
     "LibreWolf",
-    "com.system76.CosmicEdit",
-    "com.mitchellh.ghostty",
     "com.system76.CosmicTerm",
-    "com.system76.CosmicStore",
-    "com.system76.CosmicSettings",
 ]
