@@ -36,6 +36,7 @@ zinit snippet OMZP::git
 zinit snippet OMZP::sudo
 zinit snippet OMZP::archlinux
 zinit snippet OMZP::asdf
+zinit snippet OMZP::eza
 
 # Load completions
 autoload -U compinit && compinit
@@ -69,9 +70,13 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:completion:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:completion:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+zstyle ':omz:plugins:eza' 'dirs-first' yes
+zstyle ':omz:plugins:eza' 'git-status' yes
+zstyle ':omz:plugins:eza' 'header' yes
+zstyle ':omz:plugins:eza' 'show-group' yes
+zstyle ':omz:plugins:eza' 'icons' yes
 
 # Aliases
-alias ls='ls --color'
 alias c='clear'
 
 # Shell integrations
