@@ -22,6 +22,9 @@ if [[ -f "$ASDF_DIR/asdf.sh" ]]; then
 	. "$ASDF_DIR/asdf.sh"
 fi
 
+# Update colors from pywal
+wal -R
+
 # Source zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
